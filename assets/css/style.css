@@ -33,3 +33,7 @@ h1 {
   border: 2px solid #eee;
   padding: 4px 8px;
 }
+li {
+  list-style: none;
+  margin-top: 3%;
+}
