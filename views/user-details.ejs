@@ -10,17 +10,19 @@
 <body>
     <h1>利用者詳細情報</h1>
     <ul>
-        <li>名前: <%= user.name %> (<%= user.name_kana %>)</li>
-        <li>疾患名: <%= user.disease %>
-        </li>
-        <li>現病歴: <%= user.medicalHistory %>
-        </li>
-        <li>目標設定: <%= user.goals %>
-        </li>
-        <li>家族構成: <%= user.family %>
-        </li>
-        <li>既往歴: <%= user.other %>
-        </li>
+        <% for (let i=0; i < users.length; i++) { %>
+            <li>名前: <%= users[i].name %> (<%= users[i].name_kana %>)</li>
+            <li>疾患名: <%= users[i].disease %>
+            </li>
+            <li>現病歴: <%= users[i].medical_history %>
+            </li>
+            <li>目標設定: <%= users[i].goals %>
+            </li>
+            <li>家族構成: <%= users[i].family_composition %>
+            </li>
+            <li>既往歴: <%= users[i].other %>
+            </li>
+            <% } %>
     </ul>
     <a href="/">戻る</a>
 </body>

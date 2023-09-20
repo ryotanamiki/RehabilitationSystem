@@ -58,3 +58,14 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2023-06-14 16:18:43
+
+CREATE TABLE `userDetails` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `name_kana` VARCHAR(255) NOT NULL,
+  `disease` VARCHAR(255) NOT NULL,
+  `medical_history` VARCHAR(400) NOT NULL,
+  `goals` VARCHAR(400) NOT NULL,
+  `family_composition` VARCHAR(400) NOT NULL,
+  `other` VARCHAR(400) NOT NULL,
+  PRIMARY KEY (`id`));
